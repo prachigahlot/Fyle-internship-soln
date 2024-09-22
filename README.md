@@ -1,5 +1,59 @@
 # Fyle Backend Challenge
 
+
+
+
+
+#Technologies 
+Flask: For creating RESTful APIs.
+SQLAlchemy: ORM for interacting with the database.
+Marshmallow: For data serialization and validation.
+Docker: For containerizing the application.
+
+#API Endpoints
+Principal APIs
+GET /principal/assignments: List all submitted and graded assignments.
+POST /principal/assignments/grade: Grade an assignment.
+Teacher APIs
+GET /teacher/assignments: List all assignments created by the teacher.
+POST /teacher/assignments/grade: Grade a specific assignment.
+Student APIs
+GET /student/assignments: List all assignments for a student.
+POST /student/assignments/submit: Submit an assignment for grading.
+
+# for Missing API
+made changes in core/apis/assignment/principal.py file 
+made changes in server.py 
+made changes in schema.py file created schema for teachers
+made changes in __init__.py file
+
+
+# For correcting error in the file
+Added filter to the API of Assignment/Teachers  for checking condition that the assignment submitted to that teacher is deplayed
+Added Filter to the API of Assignment/Teachers/grade for checking condition.
+
+
+
+
+
+
+# List all assignments for a principal
+curl -X GET http://127.0.0.1:8000/principal/assignments -H 'X-Principal: {"user_id":5, "principal_id":1}'
+
+# Grade an assignment as a principal
+curl -X POST http://127.0.0.1:8000/principal/assignments/grade -H 'X-Principal: {"user_id":5, "principal_id":1}' -d '{"id": 1, "grade": "A"}'
+
+# List all assignments created by a teacher
+curl -X GET http://127.0.0.1:8000/teacher/assignments -H 'X-Teacher: {"
+
+
+
+
+
+
+
+
+
 ## Who is this for?
 
 This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. You should be able to commit to at least 6 months of dedicated time for internship.
