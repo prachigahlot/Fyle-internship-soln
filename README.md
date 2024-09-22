@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fyle Backend Challenge
 
 
@@ -110,3 +111,6 @@ pytest -vvv -s tests/
 # pytest --cov
 # open htmlcov/index.html
 ```
+=======
+# Fyle-internship-soln
+>>>>>>> 9d53b5a221274c620373d8be0c1ba3917bb7defc
